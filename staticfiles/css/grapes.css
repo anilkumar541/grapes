@@ -1,0 +1,206 @@
+body{
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#logo{
+    height: 58px;
+    width: 77px;
+}
+
+
+@media (min-width: 767.9px) and (max-width: 1199.98px) {
+    .map{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+/* navbar bg color */
+#top_nav{
+    background-color: rgb(130 195 88);
+}
+
+.section_name{
+    padding-left: 18px;
+    /* font-style: oblique; */
+}
+
+
+/* #banner-img{
+    height: 320px;
+    width: 250px;
+} */
+
+#banner{
+    background-color: #e6efef;
+}
+
+.bucket{
+    margin-top: 70%;
+    margin-bottom: 50%;
+}
+
+.feature{
+    color: #095e47;
+}
+
+#footer{
+
+    background-color: #9e9e9e;
+}
+#copyright{
+
+    background-color: #9e9e9e;
+}
+
+
+
+/* btn-1 css */
+.btn-101,
+.btn-101 *,
+.btn-101 :after,
+.btn-101 :before,
+.btn-101:after,
+.btn-101:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-101 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: rgb(63, 192, 80);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, rgb(102, 219, 131));
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-101:disabled {
+  cursor: default;
+}
+.btn-101:-moz-focusring {
+  outline: auto;
+}
+.btn-101 svg {
+  vertical-align: middle;
+}
+.btn-101 [hidden] {
+  display: none;
+}
+.btn-101 {
+  --thickness: 0.3rem;
+  --roundness: 1.2rem;
+  --color: #5586c5;
+  --opacity: 0.6;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background: none;
+  background: hsl(231deg 71% 40%);
+  border: none;
+  border-radius: var(--roundness);
+  color: var(--color);
+  cursor: pointer;
+  display: block;
+  font-family: Poppins, "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-101:hover {
+  background: hsla(0, 0%, 100%, 0.3);
+  filter: brightness(1.2);
+}
+.btn-101:active {
+  --opacity: 0;
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.btn-101 svg {
+  border-radius: var(--roundness);
+  display: block;
+  filter: url(#glow);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-101 rect {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: var(--thickness);
+  rx: var(--roundness);
+  stroke-linejoin: round;
+  stroke-dasharray: 185%;
+  stroke-dashoffset: 80;
+  -webkit-animation: snake 2s linear infinite;
+  animation: snake 2s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+.btn-101:hover rect {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: var(--opacity);
+}
+@-webkit-keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+@keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+.text-box{
+    /* width: 15%; */
+    background: hsl(0,-3%,14%);
+    padding: 16px 14px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+.text-box::after{
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left,
+    #13eb13, #3c92eb, #1adb23, #19d521, #2ec133, #6a0fa3, #0fc3ba, #0dd91d, #1ccb3a );
+    
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+
+}
+
+@keyframes animateGlow{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 200% 50%;
+    }
+}
