@@ -126,19 +126,16 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+STATICFILES_STORAGE = 'grapes.storage.S3Storage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-# import os
+import os
 
-# STATIC_URL = '/static/'
-
-# STATICFILES_DIRS=os.path.join(BASE_DIR, "static")
-
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+MEDIA_URL='/media/'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-# STATICFILES_DIRS = BASE_DIR / 'static'
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 
 
